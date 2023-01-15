@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Mini_projekt_3_Jakub_Wegrzyn</string>
+    <string name="podpis">Jakub Węgrzyn s26568</string>
+    <string name="zarzadzanie">Zarządzanie</string>
+    <string name="sklep">sklep</string>
+    <string name="twoje_zakupy">Twoje zakupy</string>
+    <string name="opcje">opcje</string>
+
+    <string name="dodaj_produkt">Dodaj produkt</string>
+    <string name="modyfikuj">Modyfikuj</string>
+
+    <string name="list_rozwijana">lista</string>
+    <string name="wybierz_produkt">Wybierz produkt</string>
+    <string name="cena">Cena</string>
+    <string name="cena_wysw">cena wyswietli sie</string>
+    <string name="ilosc">Ilość</string>
+    <string name="wpisz_ilosc">Wpisz ilosc</string>
+    <string name="Max_ilosc">Max ilość</string>
+    <string name="Max_ilosc_z_bazy"></string>
+    <string name="btn_Kup">Kup</string>
+    <string name="btn_Reset">Reset</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

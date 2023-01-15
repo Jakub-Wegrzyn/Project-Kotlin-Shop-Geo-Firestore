@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtzakupione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ln_1"
+            android:layout_centerHorizontal="true"
+            android:text="Twój koszyk"
+            android:textColor="@color/yellow"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ln_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txtzakupione"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv1"
+                android:layout_width="match_parent"
+                android:layout_height="410dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_1"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_imie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Imię"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edtx_imie"
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="9dp"
+                android:ems="10"
+                android:hint="Podaj Imię"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txt_nazwisko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Nazwisko"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edtx_nazwisko"
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:hint="Podaj Nazwisko"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:minHeight="48dp"
+                android:textSize="18dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_akceptuj"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="260dp"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/black"
+                android:text="Akceptuj"
+                android:textColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-15dp"
+                android:text="E-mail"
+                android:textColor="#040404"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/edtx_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:hint="E-mail"
+                android:textColor="@color/opositetopurple"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/purple_200"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/payments"
+                android:visibility="gone"
+                app:backgroundTint="@color/purple_200"
+                app:tint="@color/white" />
+
+            <!--on below line we are creating a home fab
+                 and setting its visibility to gone-->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="40dp"
+                android:background="@color/purple_200"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/delete"
+                android:visibility="gone"
+                app:backgroundTint="@color/purple_200"
+                app:tint="@color/white" />
+
+            <!--on below line we are creating a settings fab
+                and setting its visibility to gone-->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="60dp"
+                android:background="@color/purple_200"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/ic_baseline_arrow_upward_24"
+                app:backgroundTint="@color/purple_200"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

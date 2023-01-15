@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_begin"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        tools:layout="@layout/login_fr"
+        android:id="@+id/loginFragment"
+        android:name="com.example.Project_Jakub_Wegrzyn.StartApp.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_rejestracjaFragment22"
+            app:destination="@id/rejestracjaFragment2" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/zarejestruj_fr"
+        android:id="@+id/rejestracjaFragment2"
+        android:name="com.example.Project_Jakub_Wegrzyn.StartApp.RejestracjaFragment"
+        android:label="RejestracjaFragment" />
+</navigation>
